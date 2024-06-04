@@ -1,0 +1,20 @@
+services:
+  frontend:
+    build: ./frontend
+    container_name: weatherapp_frontend
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    ports:
+      - 8000:8000
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+
+  backend:
+    build: ./backend
+    container_name: weatherapp_backend
+    volumes:
+      - ./backend:/app
+      - /app/node_modules
+    ports:
+      - 9000:9000

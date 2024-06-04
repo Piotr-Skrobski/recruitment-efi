@@ -30,6 +30,7 @@ module.exports = {
     port: process.env.PORT || 8000,
   },
   output: {
+    path: path.resolve(__dirname, 'build'),
     filename: '[name].[hash:8].js',
     publicPath: '/',
   },
