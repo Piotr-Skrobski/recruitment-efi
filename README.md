@@ -19,6 +19,8 @@ created .env.example w/o API key. Also I had to add dotenv to backend; React rea
 Having that done, it was perfect time to dockerize this. I wrote Dockerfiles + docker-compose, and this wasn't really anything eventful to speak about. (At that time I wanted to add Nginx to frontend as I used it for my uni, but... I had trouble getting it to work with React. With Vue it worked out of the box, with React it appeared that it didn't, and I didn't felt it was worth spending more time thinking about)
 For deployment in cloud, I'll go with Google Cloud as I don't like AWS pricing. Azure could work too, I have access to it via uni, so let's try Google for once.
 
+While writing bash script, I wanted to keep care of not hardcoding variables. As one can see though, it's very debatable - I left for example one Docker link hard-coded to the zone.
+
 
 # Weatherapp
 
